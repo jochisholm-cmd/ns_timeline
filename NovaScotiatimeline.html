@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Coast</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+            }
+            
+        .clearfix {
+            display: block;
+            }
+        
+        a {
+            color: #0065a4;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #00578d;
+        }
+        
+        body {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        
+        .graphic-wrapper {
+            margin: 0 auto;
+            max-width: 592px;
+        }
+        
+        .graphic-top {
+            padding: 8px 0;
+        }
+        
+        @media (min-width: 526px) {
+            .graphic-top {
+                padding: 12px 0;
+            }
+        }
+        
+        @media (min-width: 592px) {
+            .graphic-top {
+                padding: 16px 0;
+            }
+        }
+        
+        h2.graphic-top__graphic-hed {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.3em;
+            font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+            color: #333;
+            webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: optimizeLegibility;
+            padding-bottom: 2px;
+        }
+        
+        @media (min-width: 526px) {
+            h2.graphic-top__graphic-hed {
+                font-size: 22px;
+            }
+        }
+        
+        @media (min-width: 592px) {
+            h2.graphic-top__graphic-hed {
+                font-size: 24px;
+            }
+        }
+        
+        h3.graphic-top__graphic-dek {
+            font-size: 16px;
+            line-height: 1.3em;
+            font-weight: 400;
+            margin: 0;
+            font-family: Times, serif;
+            color: #666;
+            webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: optimizeLegibility;
+        }
+        
+        @media (min-width: 526px) {
+            h3.graphic-top__graphic-dek {
+                font-size: 17px;
+            }
+        }
+        
+        @media (min-width: 592px) {
+            h3.graphic-top__graphic-dek {
+                font-size: 18px;
+            }
+        }
+        
+        .graphic-bottom {
+            margin: 12px 0 0;
+            padding: 6px 0 16px;
+            border-top: 1px solid #cfcfcf;
+        }
+        
+        .graphic-bottom:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        
+        @media (min-width: 526px) {
+            .graphic-bottom {
+                padding-top: 7px;
+            }
+        }
+        
+        @media (min-width: 592px) {
+            .graphic-bottom {
+                padding-top: 8px;
+            }
+        }
+        
+        p.graphic-bottom__graphic-source {
+            margin: 0;
+            padding-bottom: 5px;
+            font-size: 12px;
+            line-height: 1.3em;
+            font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+            color: #aaaaaa;
+            text-rendering: optimizeLegibility;
+            text-transform: uppercase;
+        }
+        
+        @media (min-width: 526px) {
+            p.graphic-bottom__graphic-source {
+                max-width: 65%;
+                vertical-align: top;
+                float: left;
+            }
+        }
+        
+        p.graphic-bottom__graphic-byline {
+            margin: 0;
+            padding-bottom: 5px;
+            font-size: 12px;
+            line-height: 1.3em;
+            font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            text-rendering: optimizeLegibility;
+        }
+        
+        @media (min-width: 526px) {
+            p.graphic-bottom__graphic-byline {
+                text-align: right;
+                max-width: 30%;
+                vertical-align: top;
+                float: right;
+            }
+        }
+        
+        p.graphic-bottom__notetext {
+            margin: 0;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.3em;
+            padding-bottom: 8px;
+            color: #666;
+            font-family: Times, serif;
+            webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+            text-rendering: optimizeLegibility;
+        }
+        
+        @media (min-width: 526px) {
+            p.graphic-bottom__notetext {
+                font-size: 17px;
+            }
+        }
+        
+        @media (min-width: 592px) {
+            p.graphic-bottom__notetext {
+                font-size: 18px;
+            }
+        }
+        
+        .chart-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        
+        #chart {
+            width: 100%;
+        }
+
+        .titlebox {
+            padding: 0 0 24px;
+        }
+        
+        .lefttitle, .righttitle {
+            margin: 0;
+            color: #4D4D4D;
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.4em;
+            font-size: 24px;
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10%;
+            margin: 0;
+        }
+
+        .lefttitle {
+            text-align: right;
+            padding: 0 10% 0 0;
+        }
+
+        .greyhighlight {
+            background-color: #d9caaf;
+            padding: 3px 6px 1px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            color: #352c1e;
+            margin: 0 2px;
+
+        }
+        
+        .graphic-inner-wrapper {
+            margin: 16px 0 0;
+            position: relative;
+        }
+        
+        .graphic-centre-line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            background-color: #555;
+            height: 100%;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .time-wrapper {
+            display: block;
+            width: 50%;
+            margin-left: 50%;
+            position: relative;
+        }
+        
+        .left-wrapper {
+            margin-left: 0;
+        }
+
+        .left-annotation {
+            position: absolute;
+            top: 28px;
+            left: -100%;
+            width: 100%;
+            padding-right: 16px;
+        }
+
+        .left-annotation p {
+            margin: 0;
+            color: #4D4D4D;
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.4em;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        .right-annotation {
+            position: absolute;
+            top: 28px;
+            right: -100%;
+            width: 100%;
+            padding-right: 16px;
+        }
+
+         .right-annotation p {
+            margin: 0;
+            color: #4D4D4D;
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.4em;
+            font-size: 16px;
+            text-align: right;
+        }
+        
+        .timeline-date-parent {
+            position: relative;
+        }
+        
+        .timeline-circle {
+            width: 13px;
+            height: 13px;
+            background: #555;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: 6px;
+        }
+        
+        .left-wrapper .timeline-circle {
+            position: absolute;
+            right: -6px;
+            left: auto;
+        }
+        
+        .timeline-date {
+            display: block;
+            margin: 0 0 0 16px;
+            height: 24px;
+            width: ;
+        }
+        
+        .left-wrapper .timeline-date {
+            text-align: right;
+            margin: 0 16px 0 0;
+        }
+        
+        p.timeline-date__par {
+            line-height: 24px;
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 0px 8px;
+            font-size: 15px;
+            background-color: #555;
+            color: #fff;
+            display: inline-block;
+        }
+        
+        .timeline-body {
+            display: block;
+            margin-left: 16px;
+            margin-top: 4px;
+            margin-bottom: 32px;
+        }
+        
+        .left-wrapper .timeline-body {
+            margin-left: 0;
+            margin-right: 16px;
+        }
+        
+        p.timeline-body__par {
+            margin: 0;
+            color: #4D4D4D;
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.4em;
+            font-size: 16px;
+        }
+        
+        .left-wrapper p.timeline-body__par {
+            text-align: right;
+        }
+        
+        p.timeline-body__par a {
+            color: #4D4D4D;
+            text-decoration: none;
+            box-shadow: inset 0 -3px rgba(100, 205, 245, 0.45);
+            transition: all 0.1s;
+        }
+        
+        p.timeline-body__par a:hover {
+            background-color: rgba(100, 205, 245, 0.45);
+            box-shadow: inset 0 -3px rgba(100, 205, 245, 0);
+        }
+        
+        .video-container__inner-video {
+            padding-top: 56.25%;
+            position: relative;
+            margin: 8px 0 16px;
+        }
+        
+        .video-container__inner-video__video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+        }
+        
+        .timelinephoto {
+            display: block;
+            width: 100%;
+            margin: 8px 0 16px;
+        }
+        
+        .redhighlight {
+            background-image: linear-gradient(30deg, #f2643c, #e94657, #b233a6, #9838be);
+            color: #fff;
+            padding: 3px 6px 1px;
+            border-radius: 4px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin: 0 2px;
+        }
+
+        @media (max-width: 425px) {
+            .timeline-body {
+                margin-bottom: 24px;
+            }
+            #expandbutton {
+                font-size: 12px;
+            }
+            .graphic-wrapper {
+                max-width: 100%;
+            }
+            
+            .timeline-circle {
+                width: 8px;
+                height: 8px;
+                left: -4px;
+                top: 7px;
+            }
+
+            .left-wrapper .timeline-circle {
+                right: -4px;
+            }
+
+            .timeline-date {
+                margin-left: 8px;
+                height: 20px;
+            }
+
+            .timeline-body {
+                margin-left: 8px;
+            }
+           
+
+            .left-wrapper .timeline-date {
+                margin: 0 8px 0 0;
+            }
+
+            .left-wrapper .timeline-body {
+                margin-right: 8px;
+            }
+
+            p.timeline-date__par {
+                font-size: 12px;
+                line-height: 20px;
+                padding: 0 4px;
+            }
+            p.timeline-body__par {
+                font-size: 14px;
+            }
+
+            .left-annotation {
+                padding-right: 8px;
+                top: 24px;
+            }
+
+            .left-annotation p {
+                font-size: 14px;
+            }
+
+            .right-annotation {
+                padding-left: 8px;
+                top: 24px;
+            }
+
+            .right-annotation p {
+                font-size: 14px;
+            }
+
+            .video-container__inner-video {
+                margin: 4px 0 16px;
+            }
+
+             .timelinephoto {
+                margin: 4px 0 16px;
+            }
+
+            .lefttitle, .righttitle {
+                    font-size: 18px;
+                    padding: 0 0 0 5%;
+            }
+            .lefttitle {
+                padding: 0 5% 0 0;
+            }
+
+            .redhighlight, .greyhighlight {
+                padding: 0 4px;
+                margin: 0 1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="graphic-wrapper">
+        <div class="graphic-top">
+            <h2 class="graphic-top__graphic-hed">The timeline for Nova Scotia's plan to come out of lockdown</h2>
+            <p class="timeline-body__par">The dates listed below are suggested timelines provided by the government, and are suspect to change depending on the available epidemiology at the time. To read more about the reopening plan, <a href="https://novascotia.ca/reopening-plan/phase-one/" target="_blank">click here.</a> This timeline was last updated June 1, 2021.</p>
+        </div>
+
+      
+
+        <div class="graphic-inner-wrapper">
+            <!-- <div class="titlebox clearfix">
+                <p class="lefttitle"><span >Phase</span></p>
+                <p class="righttitle">Restrictions in place</p>
+            </div>
+      -->
+            <div class="graphic-centre-line"></div>
+            <div id="wrapper">
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">April 28</p>
+                        </div>
+                        <div class="left-annotation"><p class="timeline-body__par"></span></p>          
+                         <div class="video-container__inner-video">
+                         <iframe title="How did we get here?" aria-label="Interactive line chart" id="datawrapper-chart-MP1fg" src="https://datawrapper.dwcdn.net/MP1fg/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                            </script></div></div> 
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par" id=" October 1998 ">Nova Scotia goes into lockdown to beat back its third wave.</p>
+                        <!-- <div class="video-container__inner-video"> -->
+                            <!-- <iframe src="https://giphy.com/embed/McIgnuYxEkgBsCbpju" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/primevideo-McIgnuYxEkgBsCbpju"></a></p>-->
+                        <!-- </div> -->
+                     </div>
+                    
+                </div>
+                <div class="time-wrapper"></div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">May 28</p>
+                        </div>
+
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">Premier Iain Rankin lays out <a href="https://www.thecoast.ca/halifax/nova-scotia-announces-part-one-of-five-phase-reopening-plan/Content?oid=26509817" target="_blank">reopening up plan</a>; announces new restrictions being lifted across the province for Wednesday, June 2. Schools across the province, except for the HRM and Sydney area, will go back to in-person learning by June 2.</p>
+                        <div><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hello here is the damned infographic <a href="https://twitter.com/hashtag/NovaScotia?src=hash&amp;ref_src=twsrc%5Etfw">#NovaScotia</a> <a href="https://t.co/E2Aty3jo3J">pic.twitter.com/E2Aty3jo3J</a></p>&mdash; Victoria Walton (@victorialwalton) <a href="https://twitter.com/victorialwalton/status/1398353185497026571?ref_src=twsrc%5Etfw">May 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    </div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">May 31</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">The following Monday, Rankin updates the reopening plan to <a href="https://www.thecoast.ca/halifax/covid-cases-and-news-for-nova-scotia-on-monday-may-31/Content?oid=26522938" target="_blank">include HRM and Sydney area schools.</a> they will go back to in-person learning on Thursday, June 3.</p></div>
+                    
+                </div>
+
+                <!-- <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Feb 19, 2019</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">A week from when the chair throwing video first circulates on social media, Marcella Zoia’s following on Instagram has reached <span class="redhighlight">14,000</span>.</p></div>
+                </div> -->
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">June 2</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">Phase one of the province's <a href="https://www.thecoast.ca/halifax/nova-scotia-announces-part-one-of-five-phase-reopening-plan/Content?oid=26509817" target="_blank">reopening plan begins.</a> Among the restrictions lifted are on patios for bars and restaurants, who will now be open to serve groups of 10 outside with masks being mandatory when not eating or drinking.</p>
+                        
+                        <iframe src="https://giphy.com/embed/McIgnuYxEkgBsCbpju" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/primevideo-McIgnuYxEkgBsCbpju"></a></p>
+                        <div class="left-annotation"><p class="timeline-body__par"></span></p>          
+                         <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Breaking?src=hash&amp;ref_src=twsrc%5Etfw">#Breaking</a>: Students in the HRM &amp; Sydney will go back to school THURSDAY, June 4!! ✏️✏️✏️</p>&mdash; THE COAST HALIFAX (@TwitCoast) <a href="https://twitter.com/TwitCoast/status/1399430031601029122?ref_src=twsrc%5Etfw">May 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    </div>
+                </div>
+                <div class="graphic-top">
+                    <h2 class="graphic-top__graphic-hed">Every 2-4 weeks Nova Scotia could enter a new phase. Phase 1 begins on June 2, and so could end as early as June 16 or June 30.</h2>
+                </div>
+
+                <hr style="border-top: dotted 4px #650000;" />
+                <div class="titlebox clearfix">
+                <p class="lefttitle"><span >Phase 1</span></p>
+                <p class="righttitle">Starts: June 2</p>
+            </div>
+     <div class="time-wrapper left-wrapper">
+                     <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Criteria</p>
+                        </div>
+                    </div> 
+                    <div class="timeline-body">
+                        <p class="timeline-body__par"> 💉 50% of the eligible population has received their first dose</p>
+                        <p class="timeline-body__par"> 📉 Cases continue to drop</p>
+                        <p class="timeline-body__par"> 😷 Hospitalizations and other key health indicators are monitored.</p>
+                    </div>
+
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Public Health</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">Testing, masks and distancing continues. One designated shopper per household.<a href="https://www.thecoast.ca/halifax/where-to-get-a-rapid-covid-19-test-this-week/Content?oid=26351056" target="_blank"> Rapid testing still encouraged.</a></p>
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Breaking?src=hash&amp;ref_src=twsrc%5Etfw">#Breaking</a>: Nova Scotia unveils its Phase One reopening plan.<a href="https://t.co/GtO36FRiuX">https://t.co/GtO36FRiuX</a> <a href="https://t.co/dCpusoNdb1">pic.twitter.com/dCpusoNdb1</a></p>&mdash; THE COAST HALIFAX (@TwitCoast) <a href="https://twitter.com/TwitCoast/status/1398342692300599297?ref_src=twsrc%5Etfw">May 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <div class="left-annotation"><p class="timeline-body__par"></span></p>          
+                         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Nova Scotia’s reopening plan takes a phased approach to safely easing restrictions. Phase 1 begins Wednesday, June 2. <br><br>For a detailed look at each of the five phases go to <a href="https://t.co/ByqyRlX6cC">https://t.co/ByqyRlX6cC</a> <a href="https://t.co/JuOMiKKMNl">pic.twitter.com/JuOMiKKMNl</a></p>&mdash; Nova Scotia Gov. (@nsgov) <a href="https://twitter.com/nsgov/status/1399456843483824135?ref_src=twsrc%5Etfw">May 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    </div>
+                </div>
+            
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Travel and gatherings:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🚗 You can travel throughout Nova Scotia. Testing at Halifax Stanfield.</p>
+                        <p class="timeline-body__par">⛱️ Outdoor patios open with distancing 10 people in same social bubble.</p>
+                        <p class="timeline-body__par">🎩 Outdoor faith services 10 people, or drive in. Weddings and funerals with 5 indoors, 10 outdoors, plus officiants.</p>
+                        <p class="timeline-body__par">🏠 Groups of 10 people can gather outdoors; Indoors gathering limit <a href="https://novascotia.ca/coronavirus/restrictions-and-guidance/#gatherings" target="_blank">remains your household.</a></p>
+                    </div>
+                </div>
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Business and sport:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🏀 Team practices, amateur arts, outdoor fitness classes 10 people, professional rehearsals 15 people.</p>
+                        <p class="timeline-body__par">🏕️ No games, performances. One on one training. Campgrounds open.</p>
+                        <p class="timeline-body__par">🛍️ Retail open at 25% capacity with masks, distancing. Personal service by appointment (if mask can be worn).</p>
+                    </div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">LTC and youth:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🚗 Family visits outdoors with long-term care residents who are fully vaccinated.</p>
+                        <p class="timeline-body__par">✏️ Schools open, including CBRM and HRM.</p>
+                    </div>
+                </div>
+                <hr style="border-top: dotted 4px #650000;" />
+                <div class="titlebox clearfix">
+                <p class="lefttitle"><span >Phase 2:</span></p>
+                <p class="righttitle"><i>Could</i> start: June 16/30</p>
+            </div>
+            <div class="time-wrapper"><p class="timeline-body__par"></span></p>
+                        <img class="timelinephoto" src="https://media.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif">          
+                         </div>
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Criteria</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">⏱️ 2-4 weeks later.</p>
+                        <p class="timeline-body__par">💉 60% of population one dose.</p>
+                        <p class="timeline-body__par"> 😷 Hospitalizations and other key health indicators are monitored.</p>
+                    </div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Public Health:</p>
+                        </div>
+                        <div class="timeline-body">
+                        <p class="timeline-body__par">😷 Testing. Masks and distancing continues. More than one designated shopper</p>
+                        </div>
+
+                        <!-- <div class="left-annotation"><p class="timeline-body__par"></span></p>
+                        <img class="timelinephoto" src="https://media2.fdncms.com/thecoast/imager/u/magnum/26497326/vaccine.jpg">          
+                         </div> -->
+                    </div>
+                </div>
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Travel and gatherings:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="right-annotation"><p class="timeline-body__par"></span></p>          
+                         
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Premier Rankin made the comment this will be a better customer experience, allowing your dogs. But if I can’t get up on the patio, that’s no experience for me.”<a href="https://t.co/nOhCoCcoin">https://t.co/nOhCoCcoin</a></p>&mdash; THE COAST HALIFAX (@TwitCoast) <a href="https://twitter.com/TwitCoast/status/1377621979105271811?ref_src=twsrc%5Etfw">April 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                     </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🏖️ Seasonal property owners, new residents of NS can enter, must isolate for 14 days.</p>
+                        <p class="timeline-body__par">👯 Outdoor gatherings of 25 people, 10 people indoors (household + visitors) no physical distance.</p>
+                        <p class="timeline-body__par">🍽️ Indoor dining 10 per table, with distancing.</p>
+                    </div>
+                </div>
+
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Business and sport:</p>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🏋🏾 Gyms and fitness at 50% capacity.</p>
+                        <p class="timeline-body__par">🎭 Team practices, amateur arts, meetings, training, clubs 10 indoors, 25 outdoors, professional rehearsals 15 indoors, 25 outdoors. people. No games.</p>
+                        <p class="timeline-body__par">💈 Retail open at <b>50%</b> capacity with masks, distancing. Personal services by appointment.</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Education and youth:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🖼️ Museums and libraries at 25%.</p>
+                        <p class="timeline-body__par">🥽 Day camps at 15 per group, including staff/volunteers. Adult day programs reopen.</p></div>
+                </div>
+
+                <hr style="border-top: dotted 4px #650000;" />
+                <div class="titlebox clearfix">
+                <p class="lefttitle"><span >Phase 3</span></p>
+                <p class="righttitle"><i>Could</i> start: June 30/July 28</p>
+            </div>
+            <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Criteria</p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="left-annotation"><p class="timeline-body__par"></span></p>          
+                         
+                        <img class="timelinephoto" src="https://media.giphy.com/media/oHwvp6bEuiog0bxg2P/giphy.gif">          
+                         
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">⏱️ 2-4 weeks later.</p>
+                        <p class="timeline-body__par">💉 65% of population one dose.</p>
+                        <p class="timeline-body__par"> 😷 Hospitalizations and cases dropping.</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Public Health:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">😷 Testing. Masks and distancing continues.</p>
+                    </div>
+                </div>
+
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Travel and gatherings:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🦞 No travel restrictions in NS. Atlantic Bubble reopens. Travelers from outside the bubble can enter, must isolate for 14 days.</p>
+                        <p class="timeline-body__par">👯 Indoor gatherings 10 visitors+ household no distancing.</p>
+                        <p class="timeline-body__par">🥂 Restaurants open to midnight.</p>
+                        <p class="timeline-body__par">🛐 Faith services resume with limit TBD.</p>
+                    </div>
+                </div>
+
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Business and sport:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🏐 Gyms and fitness at 75% capacity.</p>
+                        <p class="timeline-body__par">🎭 Spectators events, games, special events, training, clubs, meetings resume, limits tbd. Spectators allowed with event gathering limits.</p>
+                        <p class="timeline-body__par">💇🏽 Retail open at 75% capacity with masks, distancing. Personal services open fully.</p>
+                    </div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Education and youth:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">⛺ Overnight camps with 15 including staff and volunteers.</p>
+                    </div>
+                </div>
+
+                <hr style="border-top: dotted 4px #650000;" />
+                <div class="titlebox clearfix">
+                <p class="lefttitle"><span >Phase 4</span></p>
+                <p class="righttitle"><i>Could</i> start: July 14/Aug. 25</p>
+            </div>
+            <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Criteria</p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="left-annotation"><p class="timeline-body__par"></span></p>          
+                         
+                        <img class="timelinephoto" src="https://media.giphy.com/media/l0Ex6Ut39Zj7DzJn2/giphy.gif">          
+                         
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">⏱️ 2-4 weeks later.</p>
+                        <p class="timeline-body__par">💉 75% of population one dose.</p>
+                        <p class="timeline-body__par"> 😷 Very few cases, little spread.</p>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Public Health:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">😷 Testing. Masks and distancing continues.</p></div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Travel and gatherings:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">✈️ Travelers from outside the bubble may need to isolate may be determined by vaccine status, border testing, and epidemiology of other provinces.</p>
+                        <p class="timeline-body__par">🎉 Indoor limits for households 25 no distancing. Informal outdoor gatherings 50 no distancing.</p>
+                        <p class="timeline-body__par">👵🏽 Family visits outdoors with long-term care residents who are not fully vaccinated.</p>
+                    </div>
+                </div>
+                  <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Business and sport:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">⚽ Sports, professional, amateur arts, 50 participants with no distance and masks, for practices, games, league play, rehearsals, in person performances.</p>
+                        <p class="timeline-body__par">🎭 Spectators, special events, meetings, trainings, clubs, gyms and fitness limits tbd.</p>
+                        <p class="timeline-body__par">🏬 Retail open to 100% where possible, with masks, distancing</p>
+                    </div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Education and youth:</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">🎒 Day camps to 30 per group indoors and outdoors, without distancing.</p>
+                    </div>
+                </div>
+
+                <hr style="border-top: dotted 4px #650000;" />
+                <div class="titlebox clearfix">
+                <p class="lefttitle"><span >Phase 5</span></p>
+                <p class="righttitle">Sometime late August/early September</p>
+            </div>
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Criteria</p>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="right-annotation"><p class="timeline-body__par"></span></p>          
+                         
+                       <img class="timelinephoto" src="https://media.giphy.com/media/bg1MQ6IUVoVOM/giphy.gif">
+                     </div>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-body__par">⏱️ Projected for September.</p>
+                        <p class="timeline-body__par">💉 75% of population two doses.</p>
+                    </div>
+                </div>
+                <div class="time-wrapper left-wrapper">
+                    <div class="timeline-date-parent">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">
+                            <p class="timeline-date__par">Restrictions remaining:</p>
+                        </div>
+                        <div class="timeline-body">
+                        <p class="timeline-body__par">😷 Testing. Easing of public health measures. Federal regulations and requirements need to be considered.</p>
+                        <p class="timeline-body__par">✈️ Reduced border restrictions.</p>
+                        <p class="timeline-body__par">👯 Increased gathering limits for sports, arts, events, businesses, indoor gatherings and more.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="graphic-bottom">
+            <!-- <p class="graphic-bottom__graphic-source" id="source">Source:</p> -->
+            <p class="graphic-bottom__graphic-byline" id="byline">The Coast</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
